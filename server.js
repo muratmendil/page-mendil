@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
   res.send('Relax. We will put the home page here later.');
 });
 
-var server = app.listen(process.env.PORT || 3003, function () {
+var server = app.listen(process.env.PORT || 8080, function () {
   var port = server.address().port;
   console.log("App now running on port", port);
 });

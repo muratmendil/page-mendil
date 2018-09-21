@@ -6,7 +6,7 @@ const app = express();
 
 var morgan = require('morgan');
 
-app.use(express.static(path.join(__dirname, 'dist/mypage')));
+app.use(express.static(path.join(__dirname, 'dist')));
 app.use(bodyParser.urlencoded({
   extended: true
 }));
@@ -30,7 +30,7 @@ var router = express.Router();
 app.use('/', router);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/mypage/index.html'));
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
 // app.listen(port, function () {

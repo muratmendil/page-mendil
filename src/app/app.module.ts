@@ -9,6 +9,9 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { ContentComponent } from './content/content.component';
+import { AboutComponent } from './about/about.component';
+import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
   {
@@ -26,7 +29,10 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     MyNavComponent,
-    HomeComponent
+    HomeComponent,
+    ContentComponent,
+    AboutComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

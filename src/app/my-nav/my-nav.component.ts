@@ -24,5 +24,6 @@ export class MyNavComponent {
 
   getPage(value: any) {
     this.page.next(value);
+
   }
 }

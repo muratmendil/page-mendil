@@ -11,7 +11,7 @@ import { map } from 'rxjs/operators';
 export class MyNavComponent {
 
 
-  page: BehaviorSubject<string> = new BehaviorSubject<string>("one");
+  page: BehaviorSubject<string> = new BehaviorSubject<string>("Portfolio");
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(

@@ -12,6 +12,10 @@
   background-color: #008073 !important;
 }
 
-.centrer {
-  text-align: center;
+.mat-list-item-content {
+  margin-left: 25% !important;
+}
+
+.spanni {
+  font-family: Ubuntu, arial !important;
 }

@@ -1,0 +1,20 @@
+.paper {
+  margin: 20px;
+  padding: 20px;
+  background-image: url("../../assets/img/bg.png");
+  background-repeat: repeat;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.p {
+  font-family: Ubuntu, arial !important;
+  margin-left: 20% !important;
+  font-size: 1rem !important;
+}

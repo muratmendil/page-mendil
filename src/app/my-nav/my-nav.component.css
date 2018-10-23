@@ -6,10 +6,15 @@
   width: 250px;
 }
 
+.mat-icon {
+  margin-left: 9% !important;
+  color: #008060 !important;
+}
+
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
-  background-color: #008073 !important;
+  background-color: #008060 !important;
 }
 
 .mat-list-item-content {
@@ -17,5 +22,14 @@
 }
 
 .spanni {
-  font-family: Ubuntu, arial !important;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  color: black !important;
+}
+
+.navCenter {
+  margin-left: 40% !important;
+}
+
+.texte {
+  margin-left: 20% !important;
 }

@@ -8,6 +8,9 @@
 
 .mat-icon {
   margin-left: 9% !important;
+}
+
+.color {
   color: #008060 !important;
 }
 
@@ -28,6 +31,7 @@
 
 .navCenter {
   margin-left: 40%;
+  color: white;
 }
 
 .texte {

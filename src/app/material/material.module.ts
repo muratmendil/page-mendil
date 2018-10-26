@@ -5,6 +5,8 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 
 
@@ -16,8 +18,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatGridListModule,
     MatCardModule,
     MatTooltipModule,
+    MatMenuModule,
   ],
-  exports: [MatProgressSpinnerModule, MatRadioModule, MatCardModule, MatGridListModule, MatTooltipModule
+  exports: [MatProgressSpinnerModule, MatRadioModule, MatCardModule, MatGridListModule, MatTooltipModule, MatMenuModule
   ],
   declarations: []
 })

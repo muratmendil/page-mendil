@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-my-nav',
@@ -18,7 +19,19 @@ export class MyNavComponent {
       map(result => result.matches)
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) { }
+    langs  = [
+      {
+        'name' : 'Francais',
+        'value' : 'fr'
+      }
+      ,
+      {
+        'name' : 'English',
+        'value' : 'en'
+      }
+    ]
+    
+  constructor(private breakpointObserver: BreakpointObserver, public translate : TranslateService) { }
 
 
 

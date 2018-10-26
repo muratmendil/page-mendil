@@ -36,4 +36,10 @@
 
 .texte {
   margin-left: 20%;
+  font-size: 0.9rem;
+}
+
+.lang {
+  position: absolute;
+  right: 10%;
 }

@@ -17,7 +17,14 @@
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span class="spanni">{{page | async}}</span>
+        <div class="spanni">{{page | async}}</div>
+    <div class="lang">
+        <button mat-button [matMenuTriggerFor]="menu">Langue</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="translate.use('fr')">Francais</button>
+          <button mat-menu-item (click)="translate.use('en')">English</button>
+        </mat-menu>
+    </div>
     </mat-toolbar>
     <app-content [page]="page | async"></app-content>
   </mat-sidenav-content>

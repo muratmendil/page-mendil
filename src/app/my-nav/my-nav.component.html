@@ -2,14 +2,14 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
     <mat-toolbar color="primary">
-      <a class="navCenter" href="/home">M - M</a></mat-toolbar>
+      <a class="navCenter image-cropper" href="/home" ><img src="../../assets/img/Murat.jpg" alt="Une photo de moi" class="rounded" /></a></mat-toolbar>
     <mat-nav-list>
       <a matTooltip="A Propos" mat-list-item (click)="getPage('About')" >
-        <mat-icon class="color">tag_faces</mat-icon> <p class="texte">A Propos</p>
+        <mat-icon class="color">tag_faces</mat-icon> <p class="texte" [innerHTML]="'about' | translate"></p>
       </a>
-      <a matTooltip="Mes compétences" mat-list-item (click)="getPage('Skills')"><mat-icon class="color">code</mat-icon> <p class="texte">Mes Compétences</p></a>
-      <a matTooltip="Mes Éxpériences" mat-list-item href="#"><mat-icon class="color">web</mat-icon> <p class="texte">Mes Éxpériences</p></a> 
-      <a matTooltip="Me contacter" mat-list-item href="#"><mat-icon class="color">contacts</mat-icon> <p class="texte">Contact</p></a> 
+      <a matTooltip="Mes compétences" mat-list-item (click)="getPage('Skills')"><mat-icon class="color">code</mat-icon> <p class="texte" [innerHTML]="'skills' | translate"></p></a>
+      <a matTooltip="Mes Éxpériences" mat-list-item (click)="getPage('Experiences')"><mat-icon class="color">web</mat-icon> <p class="texte" [innerHTML]="'experiences' | translate"></p></a> 
+      <a matTooltip="Me contacter" mat-list-item (click)="getPage('Contact')"><mat-icon class="color">contacts</mat-icon> <p class="texte" [innerHTML]="'contact' | translate"></p></a> 
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

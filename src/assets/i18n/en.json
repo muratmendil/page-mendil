@@ -1,3 +1,7 @@
 {
-    "HELLO": "hello"
+    "HELLO": "hello",
+    "about": "About",
+    "skills": "My Skills",
+    "experiences": "My Experiences",
+    "contact": "Contact"
 }

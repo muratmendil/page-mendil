@@ -15,6 +15,8 @@ import { SkillsComponent } from './skills/skills.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateModule, TranslateLoader, TranslateService} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { ContactComponent } from './contact/contact.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -34,7 +36,21 @@ const routes: Routes = [
     path: 'about',
     component: AboutComponent,
     data: {
-      title: 'About'
+      title: 'A Propos'
+    }
+  },
+  {
+    path: 'experiences',
+    component: ExperiencesComponent,
+    data: {
+      title: 'Experiences'
+    }
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
+    data: {
+      title: 'Contact'
     }
   }
 ]
@@ -46,7 +62,9 @@ const routes: Routes = [
     HomeComponent,
     ContentComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+    ExperiencesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

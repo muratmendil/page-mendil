@@ -40,6 +40,13 @@ const routes: Routes = [
     }
   },
   {
+    path: 'skills',
+    component: AboutComponent,
+    data: {
+      title: 'Mes Compétences'
+    }
+  },
+  {
     path: 'experiences',
     component: ExperiencesComponent,
     data: {

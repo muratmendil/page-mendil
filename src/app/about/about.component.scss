@@ -1,14 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-
 .paper {
-  // margin: 20px;
   padding: 20px;
   background-image: url("../../assets/img/bg.png");
-  // background-color: #fff;
   background-repeat: repeat;
-  // box-shadow: -10px 14px 18px 0 rgba(0, 0, 0, 0.7), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
-  // box-shadow: -10px 14px 18px 0 rgba(191, 191, 191, 1), 0 16px 20px 0 rgba(191, 191, 191, 1);
-  height: -webkit-fill-available;
+  height: 1000px;
 }
 
 .container {
@@ -26,7 +20,7 @@
 
 .image-cropper {
   display: block;
-  border: 5px dotted #008073;
+  border: 5px dotted #1abc9c;
   width: 160px;
   height: 170px;
   border-radius: 50%;
@@ -39,4 +33,29 @@ img {
   width: inherit;
   height: inherit;
   border-radius: inherit;
+}
+
+.example-card {
+  max-width: 50%;
+  margin-left: 20%;
+}
+
+h1 {
+  line-height: 1.5;
+  font-size: 2rem;
+  margin-left: 30%;
+  width: 30%;
+  font-family: raleway, sans-serif;
+  margin-bottom: -1%;
+}
+
+h2 {
+  line-height: 1.5;
+  margin-left: 30%;
+  width: 18%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: raleway, sans-serif;
+  background: #1abc9c;
+  color: #fff;
 }

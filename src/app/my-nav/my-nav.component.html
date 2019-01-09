@@ -8,7 +8,10 @@
     <mat-nav-list>
       <a class="navCenter image-cropper" href="/home"><img src="../../assets/img/murat3.jpg" alt="Une photo de moi"
           class="rounded" /></a>
+
       <div class="nameCenter">MENDIL.EU</div>
+
+      <!-- MENU -->
       <a matTooltip=" A Propos" mat-list-item (click)="getPage('about')">
         <mat-icon class="color">tag_faces</mat-icon>
         <p class="texte" [innerHTML]="'about' | translate"></p>
@@ -25,6 +28,7 @@
         <mat-icon class="color">contacts</mat-icon>
         <p class="texte" [innerHTML]="'contact' | translate"></p>
       </a>
+
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -32,7 +36,7 @@
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <div class="spanni">{{page | async}}</div>
+      <!-- <div class="spanni">{{page | async}}</div> -->
       <div class="lang">
         <button mat-button [matMenuTriggerFor]="menu">
           <mat-icon>language</mat-icon> Langue

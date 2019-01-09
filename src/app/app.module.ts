@@ -12,9 +12,9 @@ import { HomeComponent } from './home/home.component';
 import { ContentComponent } from './content/content.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {TranslateModule, TranslateLoader, TranslateService} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { ContactComponent } from './contact/contact.component';
 
@@ -90,9 +90,9 @@ const routes: Routes = [
     RouterModule.forRoot(routes, { enableTracing: false }),
     TranslateModule.forRoot({
       loader: {
-          provide: TranslateLoader,
-          useFactory: (createTranslateLoader),
-          deps: [HttpClient]
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
       }
     })
   ],

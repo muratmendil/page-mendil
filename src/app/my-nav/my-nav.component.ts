@@ -3,6 +3,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { TranslateService } from '@ngx-translate/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-my-nav',
@@ -19,24 +20,22 @@ export class MyNavComponent {
       map(result => result.matches)
     );
 
-    langs  = [
-      {
-        'name' : 'Francais',
-        'value' : 'fr'
-      }
-      ,
-      {
-        'name' : 'English',
-        'value' : 'en'
-      }
-    ]
-    
-  constructor(private breakpointObserver: BreakpointObserver, public translate : TranslateService) { }
+  langs = [
+    {
+      'name': 'Francais',
+      'value': 'fr'
+    }
+    ,
+    {
+      'name': 'English',
+      'value': 'en'
+    }
+  ]
 
-
+  constructor(private breakpointObserver: BreakpointObserver, public translate: TranslateService, private router: Router) { }
 
   getPage(value: any) {
     this.page.next(value);
-
+    // this.router.navigate(['/' + this.page]);
   }
 }

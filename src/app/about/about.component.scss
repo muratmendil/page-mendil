@@ -1,30 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 .paper {
-  margin: 20px;
+  // margin: 20px;
   padding: 20px;
   background-image: url("../../assets/img/bg.png");
+  // background-color: #fff;
   background-repeat: repeat;
-  box-shadow: -10px 14px 18px 0 rgba(0, 0, 0, 0.7), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
+  // box-shadow: -10px 14px 18px 0 rgba(0, 0, 0, 0.7), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
+  // box-shadow: -10px 14px 18px 0 rgba(191, 191, 191, 1), 0 16px 20px 0 rgba(191, 191, 191, 1);
   height: -webkit-fill-available;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 2%; 
-  text-align: justify !important;
+  margin-top: 2%;
+  text-align: justify;
 }
 
 .p {
-  font-family: Ubuntu, arial !important;
-  margin-left: 20% !important;
-  font-size: 1rem !important;
+  font-family: raleway, sans-serif;
+  margin-left: 20%;
+  font-size: 1rem;
 }
 
 .image-cropper {
   display: block;
   border: 5px dotted #008073;
-  width: 130px;
-  height: 130px;
+  width: 160px;
+  height: 170px;
   border-radius: 50%;
   overflow: hidden;
   margin-left: auto;

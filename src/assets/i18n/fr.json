@@ -1,7 +1,7 @@
 {
-    "HELLO": "Bonjour",
-    "about": "A Propos",
-    "skills": "Mes Compétences",
-    "experiences": "Mes Éxpériences",
-    "contact": "Contact"
+  "HELLO": "Bonjour",
+  "about": "A Propos",
+  "skills": "Compétences",
+  "experiences": "Éxpériences",
+  "contact": "Contact"
 }

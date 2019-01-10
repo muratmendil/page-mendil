@@ -1,13 +1,10 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
-    <!-- <mat-toolbar color="primary">
-      <a class="navCenter image-cropper" href="/home"><img src="../../assets/img/murat2.png" alt="Une photo de moi"
-          class="rounded" /></a></mat-toolbar> -->
-    <!-- <a class="navCenter">MURAT <br>MENDIL</a></mat-toolbar> -->
     <mat-nav-list>
-      <a class="navCenter image-cropper" href="/home"><img src="../../assets/img/murat3.jpg" alt="Une photo de moi"
-          class="rounded" /></a>
+      <p class="navCenter image-cropper" mat-menu-item (click)="getPage('home')">
+        <img src="../../assets/img/murat3.jpg" alt="Une photo de moi" class="rounded" />
+      </p>
 
       <div class="nameCenter">MENDIL.EU</div>
 
@@ -28,6 +25,11 @@
         <mat-icon class="color">contacts</mat-icon>
         <p class="texte" [innerHTML]="'contact' | translate"></p>
       </a>
+      <hr />
+      <!-- <button mat-button> -->
+      <a href="https://github.com/muratmendil"><img src="../../assets/img/github-logo.svg" alt="" class="externe-link" /></a>
+      <a href="https://www.linkedin.com/in/muratmendil/"><img src="../../assets/img/linkedin.svg" alt="" class="externe-link" /></a>
+      <!-- </button> -->
 
     </mat-nav-list>
   </mat-sidenav>

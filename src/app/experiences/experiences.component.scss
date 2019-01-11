@@ -1,0 +1,13 @@
+.paper {
+  padding: 20px;
+  background-image: url("../../assets/img/bg.png");
+  background-repeat: repeat;
+  height: 1000px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  text-align: justify;
+}

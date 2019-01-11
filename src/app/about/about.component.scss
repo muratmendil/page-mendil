@@ -51,11 +51,20 @@ h1 {
 
 h2 {
   line-height: 1.5;
-  margin-left: 30%;
-  width: 18%;
+  // margin-left: 30%;
+  // margin-right: 30%;
+  // width: 18%;
+  display: block;
   text-align: center;
   font-size: 2rem;
   font-family: raleway, sans-serif;
-  background: #1abc9c;
+
   color: #fff;
+}
+
+.fullstack {
+  background: #1abc9c;
+  width: auto;
+  margin-left: 30%;
+  width: 22%;
 }

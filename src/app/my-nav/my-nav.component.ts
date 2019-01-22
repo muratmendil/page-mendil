@@ -36,6 +36,6 @@ export class MyNavComponent {
 
   getPage(value: any) {
     this.page.next(value);
-    // this.router.navigate(['/' + this.page]);
+    this.router.navigate(['/' + value]);
   }
 }

@@ -1,3 +1,60 @@
 html {
   background-color: black;
 }
+
+.paper {
+  padding: 20px;
+  background-image: url("../../assets/img/bg.png");
+  //   background-image: url("../../assets/img/murat3.jpg");
+  background-repeat: repeat;
+  height: 1000px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  text-align: justify;
+}
+
+h1 {
+  line-height: 1.5;
+  font-size: 2.5rem;
+  margin-left: 5%;
+  width: auto;
+  font-family: raleway, sans-serif;
+  margin-bottom: -1%;
+  text-shadow: 1px 1px grey;
+}
+
+h2 {
+  line-height: 1.5;
+  font-size: 2.5rem;
+  margin-left: 30%;
+  margin-top: 18%;
+  font-family: raleway, sans-serif;
+  text-shadow: 1px 1px black;
+  color: grey;
+  margin-bottom: -0.5%;
+}
+
+h3 {
+  margin-left: 32%;
+}
+
+.background {
+  background: #1abc9c;
+  color: #fff;
+  text-shadow: 1px 1px grey;
+}
+
+.underline {
+  text-decoration: underline #1abc9c;
+}
+
+.color {
+  background: #1abc9c;
+  color: #fff;
+  margin-left: 41.5%;
+  margin-top: 2.5%;
+}

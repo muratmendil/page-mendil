@@ -33,6 +33,10 @@
   color: white;
 }
 
+.active-link {
+  color: #1abc9c;
+}
+
 .nameCenter {
   margin-left: 35%;
   margin-bottom: 15%;

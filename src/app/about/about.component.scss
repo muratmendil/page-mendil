@@ -2,7 +2,7 @@
   padding: 20px;
   background-image: url("../../assets/img/bg.png");
   background-repeat: repeat;
-  height: 1000px;
+  height: -webkit-fill-available;
 }
 
 .container {
@@ -36,8 +36,8 @@ img {
 }
 
 .example-card {
-  max-width: 50%;
-  margin-left: 20%;
+  max-width: 60%;
+  margin-left: 15%;
 }
 
 h1 {
@@ -66,5 +66,5 @@ h2 {
   background: #1abc9c;
   width: auto;
   margin-left: 30%;
-  width: 30%;
+  max-width: 30%;
 }

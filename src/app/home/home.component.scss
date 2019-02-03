@@ -7,7 +7,7 @@ html {
   background-image: url("../../assets/img/bg.png");
   //   background-image: url("../../assets/img/murat3.jpg");
   background-repeat: repeat;
-  height: 1000px;
+  height: -webkit-fill-available;
 }
 
 .container {
@@ -25,21 +25,24 @@ h1 {
   font-family: raleway, sans-serif;
   margin-bottom: -1%;
   text-shadow: 1px 1px grey;
+  flex: auto;
 }
 
 h2 {
   line-height: 1.5;
   font-size: 2.5rem;
-  margin-left: 30%;
+  margin-left: 23%;
   margin-top: 18%;
   font-family: raleway, sans-serif;
   text-shadow: 1px 1px black;
   color: grey;
+  flex: auto;
   margin-bottom: -0.5%;
 }
 
 h3 {
-  margin-left: 32%;
+  margin-left: 27%;
+  flex: auto;
 }
 
 .background {
@@ -56,5 +59,5 @@ h3 {
   background: #1abc9c;
   color: #fff;
   margin-left: 41.5%;
-  margin-top: 2.5%;
+  margin-top: 1.5%;
 }

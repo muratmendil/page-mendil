@@ -2,26 +2,26 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
     <mat-nav-list>
-      <p class="navCenter image-cropper" mat-menu-item (click)="getPage('home')">
+      <p class="navCenter image-cropper" mat-menu-item [routerLink]="['/home']" routerLinkActive="active-link">
         <img src="../../assets/img/murat3.jpg" alt="Une photo de moi" class="rounded" />
       </p>
 
       <div class="nameCenter">MENDIL.EU</div>
 
       <!-- MENU -->
-      <a matTooltip=" A Propos" mat-list-item (click)="getPage('about')">
+      <a matTooltip=" A Propos" mat-list-item [routerLink]="['/about']" routerLinkActive="active-link">
         <mat-icon class="color">tag_faces</mat-icon>
         <p class="texte" [innerHTML]="'about' | translate"></p>
       </a>
-      <a matTooltip="Mes Compétences" mat-list-item (click)="getPage('skills')">
+      <a matTooltip="Mes Compétences" mat-list-item [routerLink]="['/skills']" routerLinkActive="active-link">
         <mat-icon class="color">code</mat-icon>
         <p class="texte" [innerHTML]="'skills' | translate"></p>
       </a>
-      <a matTooltip="Mes Éxpériences" mat-list-item (click)="getPage('experiences')">
+      <a matTooltip="Mes Éxpériences" mat-list-item [routerLink]="['/experiences']" routerLinkActive="active-link">
         <mat-icon class="color">web</mat-icon>
         <p class="texte" [innerHTML]="'experiences' | translate"></p>
       </a>
-      <a matTooltip="Me Contacter" mat-list-item (click)="getPage('contact')">
+      <a matTooltip="Me Contacter" mat-list-item [routerLink]="['/contact']" routerLinkActive="active-link">
         <mat-icon class="color">contacts</mat-icon>
         <p class="texte" [innerHTML]="'contact' | translate"></p>
       </a>

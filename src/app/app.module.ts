@@ -44,7 +44,7 @@ const routes: Routes = [
   },
   {
     path: 'skills',
-    component: AboutComponent,
+    component: SkillsComponent,
     data: {
       title: 'Mes Compétences'
     }

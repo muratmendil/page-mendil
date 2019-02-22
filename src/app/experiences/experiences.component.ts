@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { myExperiences } from './experiences';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-experiences',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperiencesComponent implements OnInit {
 
-  constructor() { }
+  experiences = myExperiences;
+  constructor(public translate: TranslateService) { }
 
   ngOnInit() {
   }

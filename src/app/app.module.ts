@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -16,11 +15,12 @@ import { ExperiencesComponent } from './experiences/experiences.component';
 import { ContactComponent } from './contact/contact.component';
 import { Routes, RouterModule } from '@angular/router';
 import { MaterialModule } from './material/material.module';
+import { CardExperienceComponent } from './card-experience/card-experience.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
-
 
 const routes: Routes = [
   {
@@ -73,18 +73,15 @@ const routes: Routes = [
     AboutComponent,
     SkillsComponent,
     ExperiencesComponent,
-    ContactComponent],
+    ContactComponent,
+    CardExperienceComponent],
   imports: [
+    MaterialModule,
+    FlexLayoutModule,
     BrowserModule,
     RouterModule.forRoot(routes, { enableTracing: false }),
     BrowserAnimationsModule,
     LayoutModule,
-    MaterialModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {

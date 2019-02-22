@@ -1,3 +1,9 @@
 <div class="paper">
-  Experiences
+  <div class="" fxLayout="row" fxLayout.lt-md="column">
+    <div *ngFor="let exp of experiences">
+      <app-card-experience [title]="exp.title" [post]="exp.post" [descriptions]="exp.descriptions" [logo]="exp.logo"
+        [style]="exp.style" [link]="exp.link" [frontend]="exp.skills[0].frontend" [backend]="exp.skills[0].backend"
+        [bdd]="exp.skills[0].bdd" [other]="exp.skills[0].other"></app-card-experience>
+    </div>
+  </div>
 </div>

@@ -17,7 +17,7 @@ export const myExperiences =
     {
       "post": "name2",
       "title": "title2",
-      "logo": "/assets/logos/surfy-144.png",
+      "logo": "/assets/logos/surfy-logo.png",
       "style": "logo-small",
       "descriptions": "Surfy est un outil de gestion qui accompagne les responsables de l'Environnement de Travail dans le pilotage des espaces professionnels en leur permettant de centraliser des données et informations de gestion pour gagner du temps et gagner en flexibilité. Donne un accès permanent à des informations centralisées et fiables, Délivre des plans et des fichiers Excel. Soluble dans la culture d’entreprise de ses clients",
       "skills": [

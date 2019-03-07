@@ -14,7 +14,6 @@
 
 .p {
   font-family: raleway, sans-serif;
-  margin-left: 20%;
   font-size: 1rem;
 }
 
@@ -37,34 +36,20 @@ img {
 
 .example-card {
   max-width: 60%;
-  margin-left: 15%;
 }
 
 h1 {
-  line-height: 1.5;
   font-size: 2rem;
-  margin-left: 30%;
-  width: 30%;
-  font-family: raleway, sans-serif;
+  text-align: center;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
   margin-bottom: -1%;
 }
 
 h2 {
-  line-height: 1.5;
-  // margin-left: 30%;
-  // margin-right: 30%;
-  // width: 18%;
-  display: block;
   text-align: center;
   font-size: 2rem;
-  font-family: raleway, sans-serif;
-
-  color: #fff;
-}
-
-.fullstack {
-  background: #1abc9c;
-  width: auto;
-  margin-left: 30%;
-  max-width: 30%;
+  // font-family: raleway, sans-serif;
+  // font-family: system-ui;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  color: #1abc9c;
 }

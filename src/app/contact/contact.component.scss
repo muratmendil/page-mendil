@@ -5,53 +5,6 @@
   height: -webkit-fill-available;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2%;
-  text-align: justify;
-}
-
-.icons {
-  font-size: 64px;
-}
-
-@mixin center() {
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 40%;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800,900);
-
-html {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
-  background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  font-family: 'Raleway', sans-serif;
-}
-
-.container {
-  margin-top: 2%;
-  position: absolute;
-  @include center();
-}
-
-.test {
-  background-color: #1abc9c;
-  margin-top: 10%;
-  @include center();
-}
-
 .title {
   font-weight: 600;
   color: transparent;
@@ -81,8 +34,14 @@ body {
 }
 
 .externe-link {
-  width: 6%;
-  height: 6%;
-  // margin-left: 27%;
-  // margin-top: 35%;
+  width: 50%;
+  height: 50%;
+  margin-top: 50px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }

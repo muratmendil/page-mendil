@@ -1,6 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)">
     <mat-nav-list>
       <p class="navCenter image-cropper" mat-menu-item [routerLink]="['/home']" routerLinkActive="active-link">
         <img src="../../assets/img/murat3.jpg" alt="Une photo de moi" class="rounded" />
@@ -27,15 +28,17 @@
       </a>
       <hr />
       <!-- <button mat-button> -->
-      <a href="https://github.com/muratmendil"><img src="../../assets/img/github-logo.svg" alt="" class="externe-link" /></a>
-      <a href="https://www.linkedin.com/in/muratmendil/"><img src="../../assets/img/linkedin.svg" alt="" class="externe-link" /></a>
+      <a href="https://github.com/muratmendil"><img src="../../assets/img/github.svg" alt="" class="externe-link" /></a>
+      <a href="https://www.linkedin.com/in/muratmendil/"><img src="../../assets/img/linkedin1.svg" alt=""
+          class="externe-link" /></a>
       <!-- </button> -->
 
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <!-- <div class="spanni">{{page | async}}</div> -->

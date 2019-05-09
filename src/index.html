@@ -32,7 +32,12 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'UA-139518605-1');
+    gtag('config', 'UA-139518605-1', {
+      'page_path': location.pathname + location.hash
+    });
+    // gtag('config', 'UA-139518605-1');
+    ga('send', 'pageview', '/');
+    _gaq.push(['_trackPageview', location.pathname + location.search + location.hash]);
   </script>
 </body>
 
